@@ -25,7 +25,7 @@ def products(request):
          'description': 'Материал с плюшевой текстурой. Удобный и мягкий.'},
 
         {'image': '/static/vendor/img/products/Black-Nike-Heritage-backpack.png',
-        'name': 'ерный рюкзак Nike Heritage',
+        'name': 'Черный рюкзак Nike Heritage',
         'price': '2 340,00 руб.',
         'description': 'Плотная ткань. Легкий материал.'},
 
@@ -34,13 +34,21 @@ def products(request):
         'price': '13 590,00 руб.',
         'description': 'Гладкий кожаный верх. Натуральный материал.'},
 
-        {'image': '/static/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png',
-        'name': 'Темно-синие широкие строгие брюки ASOS DESIGN',
-        'price': '2 890,00 руб.',
-        'description': 'Легкая эластичная ткань сирсакер Фактурная ткань.'},
+            {'image': '/static/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png',
+             'name': 'Темно-синие широкие строгие брюки ASOS DESIGN',
+             'price': '2 890,00 руб.',
+             'description': 'Легкая эластичная ткань сирсакер Фактурная ткань.'},
+
+            {'image': '/static/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png',
+             'name': 'ТРЕНИКИ БАТИ',
+             'price': '10000000000 руб.',
+             'description': 'ТОПТОП'},
 
 
 
     ]
     }
     return render(request, 'products.html', context = context)
+
+def login(request):
+    return render(request, 'users/login.html')
