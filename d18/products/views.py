@@ -15,5 +15,3 @@ def products(request):
     }
     return render(request, 'products.html', context = context)
 
-def login(request):
-    return render(request, 'users/login.html')
