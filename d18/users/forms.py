@@ -9,19 +9,19 @@ class UserLoginForm(AuthenticationForm):
 
 class UserRegistrationForm(UserCreationForm):
     first_name = forms.CharField(widget=forms.TextInput(attrs={
-        'class' :'from-control py-4',
+        'class' :'form-control py-4',
         'placeholer':'Введите имя'}))
     last_name = forms.CharField(widget=forms.TextInput(attrs={
-        'class': 'from-control py-4',
+        'class': 'form-control py-4',
         'placeholer': 'Введите фамилию'}))
     email = forms.CharField(widget=forms.EmailInput(attrs={
-        'class': 'from-control py-4',
+        'class': 'form-control py-4',
         'placeholer': 'Введите email'}))
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={
-        'class': 'from-control py-4',
+        'class': 'form-control py-4',
         'placeholer': 'Введите имя'}))
     password2 = forms.CharField(widget=forms.PasswordInput(attrs={
-        'class': 'from-control py-4',
+        'class': 'form-control py-4',
         'placeholer': 'Введите имя'}))
 
     class Meta:
