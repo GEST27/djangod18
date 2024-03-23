@@ -1,8 +1,8 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block css %}
-    <link href="/static/vendor/css/profile.css" rel="stylesheet">
+    <link href="{% static 'vendor/css/profile.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
